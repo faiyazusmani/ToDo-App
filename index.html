@@ -4,27 +4,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My Todo App</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
 </head>
 
 <body>
-    <div class="container">
-        <h1>ToDo App</h1>
-        <div class="input">
-            <input type="text" placeholder="Enter Your Task" id="inp">
-            <button onclick="Add()">Add</button>
-        </div>
-        <div class="text">
+    <div class="background-decoration">
+        <div class="blob blob1"></div>
+        <div class="blob blob2"></div>
+        <div class="blob blob3"></div>
+    </div>
 
+    <div class="container">
+        <div class="header">
+            <h1><i class="fas fa-check-circle"></i> My Todo App</h1>
+            <p class="subtitle">Stay organized and productive</p>
+        </div>
+
+        <div class="input-section">
+            <div class="input-wrapper">
+                <input type="text" placeholder="Add a new task..." id="inp" class="task-input">
+                <button onclick="Add()" class="add-btn">
+                    <i class="fas fa-plus"></i>
+                    <span>Add</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="task-stats">
+            <span id="taskCount">0</span> tasks
+        </div>
+
+        <div class="text">
+            <div class="empty-state" id="emptyState">
+                <i class="fas fa-clipboard-list"></i>
+                <p>No tasks yet. Add one to get started!</p>
+            </div>
         </div>
     </div>
+
     <script src="script.js"></script>
 </body>
 
