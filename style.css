@@ -328,19 +328,21 @@ h1 {
     }
 
     .input-wrapper {
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
     }
 
     .task-input {
         min-width: unset;
-    }
-
-    .add-btn span {
-        display: none;
+        flex: 1;
     }
 
     .add-btn {
-        padding: 12px 16px;
+        padding: 12px 20px;
+        white-space: normal;
+    }
+
+    .add-btn span {
+        display: inline;
     }
 
     .text ul {
@@ -370,17 +372,25 @@ h1 {
     }
 
     .input-wrapper {
-        gap: 6px;
+        gap: 8px;
+        flex-direction: column;
     }
 
     .task-input {
-        padding: 10px 12px;
+        padding: 12px 14px;
         font-size: 14px;
+        width: 100%;
     }
 
     .add-btn {
-        padding: 10px 14px;
-        font-size: 14px;
+        padding: 12px 24px;
+        font-size: 15px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .add-btn span {
+        display: inline;
     }
 
     .text {
